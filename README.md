@@ -1,2 +1,2 @@
 # usingHttpClient
-demo project
+demo project from pluralsight courses
