@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/Movies.Client.csproj": {}
+    "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/Movies.Client.csproj": {}
   },
   "projects": {
-    "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/Movies.Client.csproj": {
+    "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/Movies.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/Movies.Client.csproj",
+        "projectUniqueName": "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/Movies.Client.csproj",
         "projectName": "Movies.Client",
-        "projectPath": "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/Movies.Client.csproj",
+        "projectPath": "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/Movies.Client.csproj",
         "packagesPath": "/home/jesus/.nuget/packages/",
-        "outputPath": "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/obj/",
+        "outputPath": "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jesus/.nuget/NuGet/NuGet.Config"

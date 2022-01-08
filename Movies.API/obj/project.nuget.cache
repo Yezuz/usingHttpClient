@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7ZFZS5HxdV2U1Rl8rbV/TEUMp7yfFuFrrCVLZENX2A/IGU34luuFrq0KrBlCo3wc0dC6aqtdjqOzNyYHOsZ6qQ==",
+  "dgSpecHash": "pK7o4hmCpRICFsNm46gaqgXzQcfhhJm3zkhBlVSco+ALxkYRaDq5cj4BIFOGPnsgaaHzpwPgr1/ZRqsbn7Gzbw==",
   "success": true,
-  "projectFilePath": "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.API/Movies.API.csproj",
+  "projectFilePath": "/home/jesus/codingExcercises/usingHttpClient/Movies.API/Movies.API.csproj",
   "expectedPackageFiles": [
     "/home/jesus/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/home/jesus/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

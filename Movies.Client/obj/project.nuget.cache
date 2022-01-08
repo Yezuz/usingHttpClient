@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p0NuNFaWAb10yhvoJs+tdUiu1gwZLxcK7OA6Smf+DxdIUzZvY/bzvLGibhMlEZYVxH2vnCILX3lyalo6BKG/eQ==",
+  "dgSpecHash": "FCZdx2VLR6sRyBg8PcwpMg75zzWUEp28ozWw94nGQ/tkBhrtDUVj9RAaFWXZmEYqrq366AxtyLZTOnbMTkinww==",
   "success": true,
-  "projectFilePath": "/home/jesus/codingExcercises/usingHttpClientToConsumeApisInDotNet/example/Movies.Client/Movies.Client.csproj",
+  "projectFilePath": "/home/jesus/codingExcercises/usingHttpClient/Movies.Client/Movies.Client.csproj",
   "expectedPackageFiles": [
     "/home/jesus/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.1/microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
     "/home/jesus/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -40,9 +40,9 @@
     "/home/jesus/.nuget/packages/system.diagnostics.eventlog/5.0.0/system.diagnostics.eventlog.5.0.0.nupkg.sha512",
     "/home/jesus/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
     "/home/jesus/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/jesus/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "/home/jesus/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "/home/jesus/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.12/microsoft.netcore.app.host.linux-x64.5.0.12.nupkg.sha512",
-    "/home/jesus/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "/home/jesus/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.12/microsoft.netcore.app.host.linux-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }
