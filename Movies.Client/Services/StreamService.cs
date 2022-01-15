@@ -12,19 +12,25 @@ namespace Movies.Client.Services
 {
     public class StreamService : IIntegrationService
     { 
-      HttpClient _httpClient = new HttpClient();
+      HttpClient _httpClient = new HttpClient(new HttpClientHandler() {
+            AutomaticDecompression = System.Net.DecompressionMethods.GZip }) 
+            {
+              BaseAddress = new Uri("http://localhost:57683"),
+              Timeout = new TimeSpan(0, 0, 30)
+            };
 
-      public StreamService() {
-         _httpClient.BaseAddress = new Uri("http://localhost:57683");
-         _httpClient.Timeout = new TimeSpan(0, 0, 30);
-         _httpClient.DefaultRequestHeaders.Clear();
-      }
+      public StreamService() => _httpClient.DefaultRequestHeaders.Clear();
+      // {
+         // _httpClient.BaseAddress = new Uri("http://localhost:57683");
+         // _httpClient.Timeout = new TimeSpan(0, 0, 30);
+      // }
 
 
       public async Task Run() => 
            // await GetPosterWithStreamAndCompletionMode();
-           await PostPosterWithStream();
+           // await PostPosterWithStream();
            // await PostPosterWithStreamAndCompletionOption();
+          await GetPosterWithGZipCompression();
 
 
       async Task GetPosterWithStream() {
@@ -62,18 +68,26 @@ namespace Movies.Client.Services
         response.EnsureSuccessStatusCode();
         var poster = stream.ReadAndDeserializeFromJson<Poster>();
         System.Console.WriteLine(poster.Name);
-          // using (var streamReader = new StreamReader(stream)) {
-          //   using (var jsonTextReader = new JsonTextReader(streamReader)) {
-          //     var jsonSerializer = new JsonSerializer();
-          //     var poster = jsonSerializer.Deserialize<Poster>(jsonTextReader);
-          //     // do something with the poster
-          //   }
-          // }
+      }
+
+
+      async Task GetPosterWithGZipCompression() {
+        var request = new HttpRequestMessage(
+            HttpMethod.Get,
+            $"api/movies/d8663e5e-7494-4f81-8739-6e0de1bea7ee/posters/{Guid.NewGuid()}");
+        request.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        request.Headers.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
+        var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+
+        using var stream = await response.Content.ReadAsStreamAsync();
+        response.EnsureSuccessStatusCode();
+        var poster = stream.ReadAndDeserializeFromJson<Poster>();
+        System.Console.WriteLine($"{poster.Name} with GZIP compresion");
       }
 
 
       async Task PostPosterWithStream() { 
-        // generatea movie poster of 500KB
+        // generate a movie poster of 500KB
         var random = new Random();
         var generetedBytes = new byte[524288];
         random.NextBytes(generetedBytes);
@@ -137,6 +151,7 @@ namespace Movies.Client.Services
         var poster = stream.ReadAndDeserializeFromJson<Poster>();
         System.Console.WriteLine(poster.Name);
       }
+
     
   }
 }
