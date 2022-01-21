@@ -26,12 +26,14 @@ namespace Movies.Client.Services
 
 
       public async Task Run() { 
-        // _cancellationTokenSource.CancelAfter(1000);
+        _cancellationTokenSource.CancelAfter(1000);
         await GetTrailerAndCancel(_cancellationTokenSource);
       }
 
 
       async Task GetTrailerAndCancel(CancellationTokenSource cancellationTokenSource) {
+        var altRequest = new HttpRequestMessage();
+        // altRequest.Headers.Add;
         var request = new HttpRequestMessage(
             HttpMethod.Get,
             $"api/movies/d8663e5e-7494-4f81-8739-6e0de1bea7ee/trailers/{Guid.NewGuid()}");

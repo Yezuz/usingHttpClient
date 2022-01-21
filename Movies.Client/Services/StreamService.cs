@@ -38,6 +38,7 @@ namespace Movies.Client.Services
             HttpMethod.Get, 
             $"api/movies/d8663e5e-7494-4f81-8739-6e0de1bea7ee/posters/{Guid.NewGuid()}");
         request.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        request.Headers.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
 
         var response = await _httpClient.SendAsync(request);
 

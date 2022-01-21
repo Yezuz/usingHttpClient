@@ -1628,10 +1628,6 @@
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
             "version": "[5.0.12, 5.0.12]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {

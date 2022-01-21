@@ -50,7 +50,7 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
@@ -59,6 +59,10 @@
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
@@ -97,10 +101,6 @@
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
               "version": "[5.0.12, 5.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
